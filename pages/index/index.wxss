@@ -1,0 +1,9 @@
+/**index.wxss**/
+.tan{
+  display: flex;
+  background-color: #f0f0f0
+}
+.iten{
+  flex: 1;
+  text-align:center
+}

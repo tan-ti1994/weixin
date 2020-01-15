@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="tan">
+<view class="iten">项目</view>
+<view class="iten">文件</view>
+<view class="iten">编辑</view>
+<view class="iten">工具</view>
+</view>
