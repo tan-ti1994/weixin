@@ -13,7 +13,10 @@ Page({
     ],
     // 轮播图
     swiper_list:[],
-    dh_list:[]
+    // 导航数据
+    dh_list:[],
+     // 楼层数据
+     louc_list:[]
   },
   
 
@@ -29,11 +32,21 @@ Page({
         })
       }
     }),
+    // 导航数据
     wx.request({
       url: 'https://api.zbztb.cn/api/public/v1/home/catitems',
       success:(res)=>{
         this.setData({
           dh_list:res.data.message
+        })
+      }
+    }),
+    // 楼层数据
+    wx.request({
+      url: 'https://api.zbztb.cn/api/public/v1/home/floordata',
+      success:(res)=>{
+        this.setData({
+          louc_list:res.data.message
         })
       }
     })

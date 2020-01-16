@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/category/index",
     "pages/index/index",
     "pages/logs/logs",
     "pages/posts/posts"
@@ -12,28 +13,32 @@
   },
   "tabBar": {
     "selectedColor": "#E03440",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "stao/icons/home.png",
-      "selectedIconPath": "stao/icons/home-o.png"
-    },
-    {
-      "pagePath": "pages/index/index",
-      "text": "分类",
-      "iconPath": "stao/icons/category.png",
-      "selectedIconPath": "stao/icons/category-o.png"
-    },{
-      "pagePath": "pages/index/index",
-      "text": "购物车",
-      "iconPath": "stao/icons/cart.png",
-      "selectedIconPath": "stao/icons/cart-o.png"
-    },{
-      "pagePath": "pages/index/index",
-      "text": "我的",
-      "iconPath": "stao/icons/my.png",
-      "selectedIconPath": "stao/icons/my-o.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "stao/icons/home.png",
+        "selectedIconPath": "stao/icons/home-o.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "stao/icons/category.png",
+        "selectedIconPath": "stao/icons/category-o.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "购物车",
+        "iconPath": "stao/icons/cart.png",
+        "selectedIconPath": "stao/icons/cart-o.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "stao/icons/my.png",
+        "selectedIconPath": "stao/icons/my-o.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

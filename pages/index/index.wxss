@@ -22,3 +22,30 @@ display: flex;
 justify-content: space-around;
 padding-top: 12rpx;
 }
+.hade_nv{ 
+  width: 750rpx;
+  height: 59rpx;
+  /* background-color: #333; */
+  margin-top: 43rpx 
+  
+}
+
+.xiatu{
+  display: flex
+}
+.cangtu_9{
+  width: 232rpx;
+  height: 386rpx;
+  /* background-color: orange; */
+  margin: 15rpx 0 15rpx 15rpx;
+}
+.youtu{
+  width: 233rpx;
+  height: 188rpx;
+  background-color: greenyellow;
+  margin: 15rpx 0 0 15rpx
+}
+.cangtu{
+  display: flex;
+  flex-flow: wrap;
+}

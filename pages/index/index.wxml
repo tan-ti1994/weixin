@@ -13,10 +13,32 @@
     </swiper-item>
   </swiper>
 </view>
-<view  class="picture_1">
+<!-- 导航 -->
+<view class="picture_1">
   <view wx:for="{{dh_list}}" wx:key='index'>
     <navigator url="{{item.navigator_url}}" open_type="{{item.open_type}}">
       <image class="picture" src="{{item.image_src}}" mode="widthFix"></image>
     </navigator>
+  </view>
+</view>
+<!-- 楼层 -->
+<!-- 最大 -->
+<view class="da"
+wx:for="{{louc_list}}" wx:key="index">
+  <!-- 上 -->
+  <view class="hade_nv" >
+<image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+  
+  </view>
+  <!-- 下 -->
+  <view class="xiatu" >
+    <!-- 左 -->
+    <view >
+    <image class="cangtu_9"  src="{{item.product_list[0].image_src}}" mode="widthFix"></image>
+    </view>
+    <view class="cangtu">
+    <image class="youtu" wx:for="{{item.product_list}}" wx:key="index" src="{{item.image_src}}"  wx:if="{{index!=0}}"></image>
+      <!-- <view class="youtu" >短途</view> -->
+    </view>
   </view>
 </view>
