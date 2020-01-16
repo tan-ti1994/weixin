@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "sousuo":"/component/sechimpde/component"
+  }
 }

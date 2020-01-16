@@ -1,0 +1,19 @@
+/* component/sechimpde/component.wxss */
+.tan{
+ width: 100%;
+ height: 100rpx;
+ background-color:#EA4350;
+ display: flex;
+  justify-content:center;
+  align-items: center
+
+}
+.tan-1{
+  width: 700rpx;
+  height: 80rpx;background-color: #fff;
+  border-radius:5rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center
+
+}
