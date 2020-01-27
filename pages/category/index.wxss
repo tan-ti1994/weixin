@@ -1,0 +1,16 @@
+/* pages/category/index.wxss */
+.commodity_lisat {
+  width:182rpx;
+  /* height: 1000rpx; */
+  background-color: #F3F3F3;
+
+}
+
+.list{
+  font-size: 28rpx;
+color: #333;
+letter-spacing: 0;
+text-align: center;
+/* border: 1rpx solid red; */
+margin: 27rpx 35rpx 37rpx 35rpx
+}

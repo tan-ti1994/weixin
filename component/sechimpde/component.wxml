@@ -1,0 +1,4 @@
+<!--component/sechimpde/component.wxml-->
+<view class="tan">
+  <view class="tan-1">搜所</view>
+</view>

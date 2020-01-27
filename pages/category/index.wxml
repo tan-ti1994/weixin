@@ -1,0 +1,9 @@
+<!--pages/category/index.wxml-->
+<sousuo/>
+<view class="commodity_lisat">
+<scroll-view scroll-y="true" style="height: 1000rpx;">
+<view class="list" wx:for="{{commodity_list}}" wx:key="{{item.cat_id}}">{{item.cat_name}}</view>
+
+</scroll-view>
+
+</view>
