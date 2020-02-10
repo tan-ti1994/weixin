@@ -1,9 +1,39 @@
-<!--pages/category/index.wxml-->
-<sousuo/>
-<view class="commodity_lisat">
-<scroll-view scroll-y="true" style="height: 1000rpx;">
-<view class="list" wx:for="{{commodity_list}}" wx:key="{{item.cat_id}}">{{item.cat_name}}</view>
-
-</scroll-view>
+<view class="pyg_category">
+  <!-- 搜所栏开始 -->
+  <sousuo/>
+  <!-- 搜所栏结束 -->
+  <!-- 产品分类开始 -->
+  <view class="category_list">
+    <!-- 左边开始 -->
+    <scroll-view scroll-y class="category_lefe">
+      <view class="category_lefe_item {{index===selectIndex?'active':''}}" wx:for="{{categories}}" 
+      bindtap="handleiItemClick"
+      data-index="{{index}}"
+      
+       wx:key="index">
+        {{item.cat_name}}
+      </view>
+    </scroll-view>
+    <!-- 左边结束 -->
+    <!-- 右边内容开始 -->
+    <scroll-view scroll-y class="category_ride"scroll-top="scroll_top" >
+      <view class="category_ride_center" wx:for="{{righconten}}" wx:key="index">
+        <!-- 标题开始 -->
+        <view class="category_ride_center_item">/{{' '+item.cat_name+' '}}/</view>
+        <!-- 标题结束 -->
+        <!-- 图片开始 -->
+        <navigator class="category_ride_center_title" url="/pages/goods_list/index?cid={{cat_id}}"
+        wx:for="{{item.children}}" wx:for-index="i" wx:for-item="v" wx:key="i">
+        <view class="image_wrapper">
+        <image src="{{v.cat_icon}}"></image>
+        </view>
+        <view class="cat_name">{{v.cat_name}}</view>
+        </navigator>
+        <!-- 图片结束 -->
+      </view>
+    </scroll-view>
+    <!-- 右边内容结束 -->
+  </view>
+  <!-- 产品分类结束 -->
 
 </view>

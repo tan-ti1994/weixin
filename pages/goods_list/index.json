@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+"inpute":"../../component/sechimpde/component",
+"tads":"../../component/tads/tads"
+
+  },
+  "navigationBarTitleText": "商品类表",
+
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+  
+  }

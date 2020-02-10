@@ -1,0 +1,57 @@
+.category_list {
+  // 清除浮动
+  overflow: hidden;
+  height: calc(100vh - 100rpx);
+  .category_lefe {
+    height: 100%;
+    width: 182rpx;
+    background-color: #f3f3f3;
+    float: left;
+    .category_lefe_item {
+      font-size: 28rpx;
+      line-height: 40rpx;
+      text-align: center;
+      padding-top: 37rpx;
+      &:nth-child(1) {
+        padding-top: 27rpx;
+      }
+    }
+    .active {
+      color: #eb4450;
+      border-left: 3rpx solid #eb4450;
+      text-align: center;
+    }
+  }
+
+  .category_ride {
+    height: 100%;
+    float: right;
+    width: calc(100vw - 182rpx);
+    .category_ride_center {
+      overflow:hidden;
+      .category_ride_center_item {
+        font-size: 26rpx;
+        text-align: center;
+        padding-top: 28rpx;
+        padding-bottom: 21rpx;
+        color: #636363;
+      }
+      .category_ride_center_title {
+        width: 33.33%;
+        float: left;
+        text-align:center;
+
+        .image_wrapper {
+           image {
+       width: 120rpx;
+       height: 120rpx;
+           }
+         }
+       
+       .cat_name {
+       font-size: 21rpx;
+         }
+       }
+    }
+  }
+}

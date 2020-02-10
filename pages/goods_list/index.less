@@ -1,0 +1,34 @@
+.goods_list_conter {
+  .list_item {
+    display: flex;
+    .image_wrapper {
+        padding: 9rpx 19rpx 18rpx 41rpx;
+      image {
+        height: 191rpx;
+        width: 191rpx;
+      }
+    }
+
+    .list_desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .title {
+        font-size: 24rpx;
+        padding-left: 29rpx;
+        padding-right: 26rpx;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .wenzi {
+          color: #eb4450;
+          padding-left: 29rpx;
+          font-size: 24rpx;
+          padding-bottom: 27rpx;
+      }
+    }
+  }
+}

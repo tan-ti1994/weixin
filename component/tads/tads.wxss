@@ -1,0 +1,19 @@
+.pyg_tads {
+  display: flex;
+}
+.pyg_tads .pyg_tads_item {
+  flex: 1;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pyg_tads .pyg_tads_item .pyg_tads_tidel {
+  padding: 20rpx;
+  width: 80%;
+  text-align: center;
+}
+.pyg_tads .active {
+  border-bottom: 3rpx solid #eb4450;
+  font-weight: 600;
+}

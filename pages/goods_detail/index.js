@@ -1,20 +1,31 @@
-// pages/posts/posts.js
+// pages/goods_detail/index.js
+import{request} from "../../request/request.js"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goods_detail:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getgoodsDetail(options)
   },
-
+// 获取商品详情数据
+getgoodsDetail: async function(params){
+const goods_detail =await request({
+  url:"/goods/detail",
+  data: params,
+})
+  this.setData({
+    goods_detail
+  })
+  console.log(goods_detail)
+},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

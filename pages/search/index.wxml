@@ -1,0 +1,34 @@
+<view class="search_center">
+<!-- 左边输入框开始 -->
+<view class="search_input">
+<icon type="search"></icon>
+<input placeholder="输入商品名"
+bindinput="handlenputChange"
+value="{{iputeVal}}"
+></input>
+</view>
+<!-- 左边输入框结束 -->
+<!-- 右边按钮开始 -->
+<view class="search_btn"
+bindtap="handleSaerch"
+>
+搜索
+</view>
+<!-- 右边按钮结束 -->
+<!-- 搜索列表开始 -->
+<!-- <view class="search_list">
+<block wx:for="{{goods_list}}" wx:key="index">
+<navigator url="/pages/goods_detail/index?goods_id={{item.doods_id}}" open-type="navigate" class="search_list_item">
+<view class="image_wrap">
+<image src="https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg"></image>
+</view>
+<view class="goods_name">
+{{item.goods_name}}
+</view>
+</navigator>
+</block>
+</view> -->
+<goodlist  goods_list="{{goods_list}}"/>
+<!-- 搜索列表结束 -->
+</view>
+ <!-- goodsList="{{goods_list}}" -->

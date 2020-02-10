@@ -1,9 +1,6 @@
 <!--index.wxml-->
 <sousuo/>
-<!-- <view class="sech">  -->
-<!-- <view class="sech-1" wx:for='{{navr}}'wx:key="index">{{item.name}}</view> -->
-<!-- <view class="sech-1" wx:key="id" wx:for="{{navr}}" wx:for-item='v' wx:for-index="i" >{{v.name}}{{i}}</view>
-</view> -->
+
 <view class="lb">
   <swiper autoplay='true' circular='true' class="lb-1">
     <swiper-item wx:for="{{swiper_list}}" wx:key="goods_id">
@@ -15,30 +12,25 @@
 </view>
 <!-- 导航 -->
 <view class="picture_1">
-  <view wx:for="{{dh_list}}" wx:key='index'>
-    <navigator url="{{item.navigator_url}}" open_type="{{item.open_type}}">
+  <block wx:for="{{dh_list}}" wx:key='index'>
+    <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
       <image class="picture" src="{{item.image_src}}" mode="widthFix"></image>
     </navigator>
-  </view>
+  </block>
 </view>
-<!-- 楼层 -->
-<!-- 最大 -->
-<view class="da"
-wx:for="{{louc_list}}" wx:key="index">
-  <!-- 上 -->
-  <view class="hade_nv" >
-<image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
-  
-  </view>
-  <!-- 下 -->
-  <view class="xiatu" >
-    <!-- 左 -->
-    <view >
-    <image class="cangtu_9"  src="{{item.product_list[0].image_src}}" mode="widthFix"></image>
+<!-- 楼层 开始-->
+<view class="flooData">
+  <block wx:for="{{louc_list}}" wx:key="index">
+    <view class="fool_tetle">
+      <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+      <view class="product_list">
+        <block wx:for="{{item.product_list}}" wx:for-item="v" wx:for-index="i" wx:key="i">
+          <navigator url="{{v.navigator_url}}" open-type="{{v.open_type}}">
+            <image src="{{v.image_src}}"></image>
+          </navigator>
+        </block>
+      </view>
     </view>
-    <view class="cangtu">
-    <image class="youtu" wx:for="{{item.product_list}}" wx:key="index" src="{{item.image_src}}"  wx:if="{{index!=0}}"></image>
-      <!-- <view class="youtu" >短途</view> -->
-    </view>
-  </view>
+  </block>
 </view>
+<!-- 楼层 结束-->

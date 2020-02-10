@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "sousuo":"/component/sechimpde/component"
-  }
+  },
+  "navigationBarTitleText":"商品分类"
 }

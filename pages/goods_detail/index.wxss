@@ -1,0 +1,7 @@
+.goods_detile_swiper swiper {
+  height: 497rpx;
+}
+.goods_detile_swiper swiper swiper-item image {
+  height: 497rpx;
+  width: 497rpx;
+}

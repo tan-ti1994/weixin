@@ -1,0 +1,38 @@
+<view class="goods_list">
+<!-- 搜所框开始 -->
+<inpute/>
+<!-- 搜所框结束 -->
+<!-- tads栏开始 -->
+<tads tads="{{tads}}" bind:tadsChange="handleTadsChange"/>
+<!-- tads栏结束 -->
+<!-- 类表内容开始 -->
+<view wx:if="{{tads[0].isActive}}">
+<view class="goods_list_conter">
+<navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" wx:for="{{goods}}" wx:key="index" class="list_item">
+<view class="image_wrapper">
+<image src="{{item.goods_big_logo?item.goods_big_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"></image>
+</view>
+<view class="list_desc">
+<view class="title">{{item.goods_name}}</view>
+<view class="wenzi">{{item.goods_price}}</view>
+</view>
+</navigator>
+
+
+
+</view>
+
+
+
+
+
+</view>
+<view wx:if="{{tads[1].isActive}}">2</view>
+<view wx:if="{{tads[2].isActive}}">3</view>
+
+<!-- 类表内容结束-->
+
+
+
+
+</view>

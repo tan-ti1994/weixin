@@ -1,0 +1,11 @@
+<view calss="goods_detile">
+<!-- 轮播播图开始 -->
+<view class="goods_detile_swiper">
+<swiper circular="true" indicator-color="true" indicator-dots="true">
+<swiper-item wx:for="{{goods_detail.pics}}" wx:key="index">
+<image src="{{item.pics_mid}}"></image>
+</swiper-item>
+</swiper>
+</view>
+<!-- 轮播播图结束 -->
+</view>

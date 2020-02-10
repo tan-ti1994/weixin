@@ -1,0 +1,9 @@
+<view class="pyg_tads">
+  <view class="pyg_tads_item" wx:for="{{tads}}" wx:key="index" bindtap="handleTadsChlick" data-id="{{item.id}}">
+    <view class="pyg_tads_tidel {{item.isActive?'active':''}}">
+      {{item.value}}
+    </view>
+
+  </view>
+
+</view>
